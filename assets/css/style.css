@@ -254,5 +254,59 @@ header.active .menu {
 }
 /* banner end */
 
+/* banner middle start */
+.banner-middle {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 45%;
+    height: 100vh;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: ease-in-out 1s;
+    transition-delay: 0.5s;
+}
+
+.banner-middle.active {
+    left: 10%;
+}
+
+.banner-middle .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+/* banner middle end */
+
+
+/* slider start */
+.swiper-women,
+.swiper-men,
+.swiper-new {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    background: #fff;
+    cursor: grab;
+    transition: 0.3s;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* slider end */
+
+
+
 
 
