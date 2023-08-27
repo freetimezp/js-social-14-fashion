@@ -53,6 +53,14 @@ function toggleBanner() {
     bannerRight.classList.toggle('active');
 }
 
+function toggleMenu() {
+    const navMobile = document.querySelector('.nav-mobile');
+    const menu = document.querySelector('.menu');
+
+    navMobile.classList.toggle('active');
+    menu.classList.toggle('active');
+}
+
 
 
 
