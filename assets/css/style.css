@@ -302,9 +302,170 @@ header.active .menu {
     object-fit: cover;
     object-position: center;
 }
-
-
 /* slider end */
+
+/* banner right start */
+.banner-right {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 45%;
+    height: 100vh;
+    padding: 50px 40px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.4s;
+}
+
+.banner-right.active {
+    left: 55%;
+}
+
+.banner-right h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 8.5em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+    transform-origin: left;
+    line-height: 1em;
+}
+
+.banner-right .number {
+    position: absolute;
+    font-size: 6em;
+    top: 10%;
+    right: 15%;
+}
+
+.banner-right .content {
+    display: flex;
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg, #000, transparent, transparent) 30;
+}
+
+.content img {
+    padding: 20px;
+    max-width: 55%;
+    object-fit: cover;
+    border-left: 1px solid;
+    border-image: linear-gradient(#000, transparent, transparent) 30;
+}
+
+.content .description {
+    padding: 20px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(transparent, transparent, #000) 30;
+}
+
+.content .description h3 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.content .description span {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.content .description p {
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.content .description a {
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.content .description a ion-icon {
+    margin-left: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.content .description a:hover {
+    color: var(--primary);
+}
+
+.content .description a:hover ion-icon {
+    margin-left: 10px;
+}
+
+.footer-content {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.credits a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.sci {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    z-index: 20;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sci a ion-icon {
+    font-size: 1.5em;
+    color: #000;
+    transition: 0.3s;
+}
+
+.sci a:hover ion-icon {
+    color: var(--primary);
+}
+
+.credits {
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+/* banner right end */
+
 
 
 
